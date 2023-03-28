@@ -1,0 +1,29 @@
+<!-- tab3.page.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      도움말
+    </ion-title>
+    <ion-button (click)="startListening()" slot="end"><p>음성인식</p></ion-button>
+    <!-- <ion-button (click)="stopRecognition()" slot="end"><p>Stop Listening</p></ion-button> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">입력된 음성</ion-label>
+    <div #inputVoice>{{inputVoice}}</div>
+  </ion-item>
+
+  <a><br>라이트토크(주)에서 제작한 기기들을 앱을 통해 쉽게 제어합니다.</a>
+
+<br><br><br>
+<a class="connectGuide"> 기기 등록 방법</a>
+
+<a><br><br><br>1. <strong>'블루투스'</strong>탭에서 Wifi 버튼을 눌러 사용할 Wifi 정보를 입력해주세요.</a>
+<a><br><br>2. <strong>'확인'</strong> 버튼을 통해 입력된 값을 확인할 수 있습니다.</a>
+<a><br><br>3. <strong>'Scan'</strong> 버튼을 누르면 주변 BLE 장치들을 검색합니다.</a>
+<a><br><br>4. LightTalk 이름을 가진 장치가 식별되면 <strong>'Connect'</strong> 버튼을 눌러주세요.</a>
+<a><br><br>5. 잠시 후 장치가 자동으로 연결됩니다.</a>
+</ion-content>
